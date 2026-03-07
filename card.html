@@ -160,15 +160,13 @@
             background: linear-gradient(90deg, #FF7F7F, #FFB347, #98D8C8);
         }
 
-        .back-sculpture {
-            position: absolute;
-            width: 120px;
-            height: 180px;
-            opacity: 0.06;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160"><path d="M50 10 C30 30 20 60 25 90 C28 110 35 130 50 150 C65 130 72 110 75 90 C80 60 70 30 50 10Z" fill="%23333"/></svg>') center/contain no-repeat;
+        .back-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
         }
 
         .back-brand {
@@ -253,7 +251,7 @@
     <div>
         <h2 style="margin-bottom: 12px;">Back — 裏面</h2>
         <div class="card card--back">
-            <div class="back-sculpture"></div>
+            <img src="apple-touch-icon.png" alt="KIZUNA Atelier" class="back-logo">
             <div class="back-brand">KIZUNA <span>Atelier</span></div>
             <div class="back-tagline">つくる力は、生きる力。</div>
             <div class="back-url">kizunaatelier.art</div>
